@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{width: 100%;background:rgb( 245,245,245);}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,dl,dd,fieldset,legend,input,textarea,select {margin:0;padding:0;}
+body{font:12px "宋体";word-wrap:break-word;}
+a,u,s,del{color:#666;text-decoration:none;} 
+fieldset ,a img,.bor0{border:0;}
+i,em,b{font-style:normal;font-weight:100;}
+li{list-style:none;}
+img{vertical-align:middle;}
+table{border-collapse:collapse;}
+.ind2{text-indent:2em;}
+
+
+
+/*图片水平垂直居中*/
+.valign{text-align:center;}
+.valign img{vertical-align:middle;}
+.valign:after{content:"";display:inline-block;height:100%;vertical-align:middle;}
+
+/*单行文本出现省略号*/
+.over{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+/*阻止margin-top向父元素传递*/
+.clear:before{content:"";display:table;}
+
+/*清除浮动*/
+.clear:after{content:"";clear:both;display:block;}
+
+

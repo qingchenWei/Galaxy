@@ -1,0 +1,35 @@
+[{
+    "hotname":"Samsung Galaxy Watch LTE版",
+    "descr":"抢先收藏 快人一步",
+    "price":"¥3999",
+    "src":"../img/watch/1.jpg"
+},{
+    "hotname":"Galaxy Watch Active",
+    "descr":"新品上市 现货销售",
+    "price":"¥1999",
+    "src":"../img/watch/2.jpg"
+},{
+    "hotname":"Samsung Galaxy Buds",
+    "descr":"换新补贴至高800元 享好礼",
+    "price":"¥3999",
+    "src":"../img/watch/3.jpg"
+},{
+    "hotname":"Samsung Galaxy Watch",
+    "descr":"优惠1400 享好礼",
+    "price":"￥2599",
+    "src":"../img/watch/4.jpg"
+},{
+    "hotname":"Samsung Galaxy Watch Active2",
+    "descr":"优惠500元 赠好礼",
+    "price":"¥3999",
+    "src":"../img/watch/5.jpg"
+},{
+    "hotname":"Samsung Galaxy Watch Active",
+    "descr":"优惠100元 享3期免息",
+    "price":"¥3699",
+    "src":"../img/watch/6.jpg"
+}
+,{
+    "src":"../img/watch/big.png"
+}
+]

@@ -1,0 +1,69 @@
+.navBox{background: white;position: fixed;left: 0; right: 0; top: 0;z-index: 2;}
+.nav{height: 72px; color: black;font: 16px/2 "";border-bottom: 1px solid rgb(238,238,238);margin: 0 auto;}
+.margin{max-width:1250 ; margin: 0 auto;}
+.nav-left{width: 40%;  float: left;}
+.nav-left li{ float: left; margin:0 10px ;}
+.nav-left>li>a{display: inline-block; font: 16px/70px  "";}
+.nav-left>li:hover>a{color: blue;border-bottom:2px  solid blue;}
+.nav-logoImg{display: block;  float: left;width: 10%; height: 22px; margin:25px; }
+.nav-right{width: 40%; float: right;position: relative;}
+.nav-right>li{float: left;margin:20px 25px ;position: relative; cursor: pointer;}
+.nav-right>li i{display: inline-block; width:25px;height: 20px; background: url(../img/ico/icon.png) no-repeat center; position: absolute;left: -25px; top: 7px;}
+.nav-right>li:nth-child(1) i{background-position:-20px 0 ;}
+.nav-right>li:nth-child(2) i{ background-position:-46px 0 ;}
+.nav-right>li:nth-child(3) i{background-position:-74px 0 ;}
+.nav-right>li:nth-child(4) i{background-position:-100px 0 ;}
+.nav-right>li:nth-child(5) i{background-position:-130px 0 ;}
+
+.nav-right>li:hover,li:hover>a{color: blue;}
+.nav-right>li:nth-child(2):hover i{ background-position:-46px -26px ;}
+.nav-right>li:nth-child(3):hover i{ background-position:-74px -26px ;}
+.nav-right>li:nth-child(4):hover i {background-position:-100px -26px ;}
+.nav-right>li:nth-child(5):hover i{background-position:-130px -26px ;}
+.searchBox{position: absolute; top:72px;right:400px;border: 1px solid rgb(238,238,238);display: none;height: 80px;width: 300px;z-index: 1; background: white;}
+.searchBox input{height: 40px;border: none; border-bottom:1px solid rgb(238,238,238); margin: 20px;}
+.searchBox .searchBtn{display: inline-block; width: 22px;height: 20px;background: url(../img/ico/icon.png) no-repeat center; background-position:-100px 0 ; position: absolute; top:35px;right:70px ; cursor: pointer;}
+.searchBox .cancel{display: inline-block;position: absolute;top: -10px;right: 20px; font: 40px/100px "";cursor: pointer;}
+.banner{width: 100%;position: relative; margin-top: 74px;}
+.banner .imgBox{width: 100%;height: 423px;overflow: hidden; position: relative;cursor: pointer;}
+.banner .imgBox li{width: 100%;height: 423px;position: absolute; left: 0; top:0px;}
+.banner .imgBox li .img{display:inline-block; width: 100%;height: 423px;}
+.banner .list{width:300px;position: absolute; left: 0; right: 0; margin:0   auto;bottom: 10px;}
+.banner .list li{width: 16px; height: 16px; border-radius:50%; border: 1px solid black; float: left;margin-left: 30px;box-shadow: 0 0 4px 3px white;cursor: pointer;}
+.new{margin-top: 50px; }
+.new a{margin-left: 22px; cursor: pointer;}
+.new a:nth-child(1){margin-left: 0px;}
+.new a img{width: 390px; }
+.hotword,.iphonword,.watchword{font: 600 30px/3 ""; text-align:center; position: relative;}
+.hotword i,.iphonword i,.watchword i{display: block; width: 30px; height: 5px; background: rgb(5, 5, 167);position: absolute; left: 0; right: 0;
+top: 20px; margin: auto;}
+.hot{height:400px; }
+.hot .hotpin,.iphone-main li,.watch-main li{float: left; width: 305px; height:370px; font: 18px/30px ""; color: black; text-align: center;background: white;margin-right: 2px;padding-top: 30px;position: relative;cursor: pointer;}
+.hot .hotpin:hover{border-top:2px solid rgb(80,93,180)}
+.hot span,.iphone-main span,.watch-main span{display: block;}
+.hot span.price,.iphone-main span.price,.watch-main span.price{color: rgb(80,93,180); font: 600 16px/3 "";}
+.hot img,.iphone-main img,.watch-main li img{width: 204px; height: 204px;}
+.hot em img{width: 67px; height: 20px;position: absolute; left: 0; right: 0; top: 2px; margin: auto;}
+.iphon{height: 750px;}
+.iphon-top{ font: 20px/2 "";width: 600px;height: 40px; margin: 0 auto;display: flex;justify-content: space-around;position: relative;}
+.iphon-top li{float: left; text-align: center;}
+.iphon-top .more{position: absolute; right:-300px;top:0;}
+.iphone-main,.watch-main{width:930px;float: left;}
+.iphone-main li{height:320px; width: 295px;margin-bottom: 10px;margin-right: 12px;}
+.count,.watchcount{margin-top: 15px;height: 700px;}
+.iphon .left,.watchleft {width: 309px;height: 700px; float: left;}
+.floor{ height: 500px; position: absolute; left:100px; top:-240px;}
+.floor li{height:100px;width: 90px;}
+#onefloor,#twofloor{height: 50px;}
+.watchword{position: relative;}
+.watchword .watchmore{position: absolute; right:30px;top:30px; font: 20px/2 "";}
+.watch-main li{height:320px; width: 295px;margin-bottom: 10px;margin-right: 12px;}
+.nav-tip{width:100%; height:250px; background:white;position: absolute;left:0;top: 72px;z-index: 3;display: none;}
+.nav-tip .nav-img{width:45%;height: 200px;;float: left;margin-top: 20px;border-right: 1px solid #999;text-align: center;}
+.nav-tip li{width: 100px;}
+.nav-tip span{width: 100px;display: block;font: 14px/2 ""; }
+.nav-small li{width: 200px; float: none;margin-top: 10px;}
+.nav-img img{display: block; width: 100px; height: 120px;}
+.nav-img li:hover{color: blue;}
+.nav-img li{ margin-right:30px;}
+.nav-tip .nav-small{width:30%;height: 200px; float: left;margin-top: 20px;}

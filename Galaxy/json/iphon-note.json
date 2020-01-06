@@ -1,0 +1,35 @@
+[{
+    "hotname":"三星W20 5G",
+    "descr":"抢先收藏 快人一步",
+    "price":"¥19999",
+    "src":"../img/iphone/Galaxy-Note/1.jpg"
+},{
+    "hotname":"Samsung Galaxy Fold",
+    "descr":"新品上市 现货销售",
+    "price":"¥15999",
+    "src":"../img/iphone/Galaxy-Note/2.jpg"
+},{
+    "hotname":"Galaxy Note10+ 5G",
+    "descr":"换新补贴至高800元 享好礼",
+    "price":"¥7999",
+    "src":"../img/iphone/Galaxy-Note/3.jpg"
+},{
+    "hotname":"Galaxy S10+8GB+128GB",
+    "descr":"优惠1400 享好礼",
+    "price":"￥5599",
+    "src":"../img/iphone/Galaxy-Note/4.jpg"
+},{
+    "hotname":"Galaxy A90 5G",
+    "descr":"优惠500元 赠好礼",
+    "price":"¥3999",
+    "src":"../img/iphone/Galaxy-Note/5.jpg"
+},{
+    "hotname":"Samsung Galaxy M30s",
+    "descr":"优惠100元 享3期免息",
+    "price":"¥1699",
+    "src":"../img/iphone/Galaxy-Note/6.jpg"
+}
+,{
+    "src":"../img/iphone/Galaxy-Note/big.png"
+}
+]

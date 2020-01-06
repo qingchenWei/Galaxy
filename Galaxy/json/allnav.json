@@ -1,0 +1,73 @@
+[[
+    [{
+    "hotname":"Galaxy Note10+ 5G",
+    "src":"../img/iphone/iphone-nav/1.jpg"
+},{
+    "hotname":"Galaxy Note10",
+    "src":"../img/iphone/iphone-nav/2.jpg"
+},{
+    "hotname":"Galaxy S10+ 8GB+128GB版",
+    "src":"../img/iphone/iphone-nav/3.jpg"
+},{
+    "hotname":"Galaxy A90 5G",
+    "src":"../img/iphone/iphone-nav/4.jpg"
+}],["Samsung Galaxy Fold","Galaxy Note系列","Galaxy S系列","Galaxy A系列"]
+],[
+    [{
+        "hotname":"Samsung Galaxy Watch Active2",
+        "src":"../img/watch/watch-nav/1.jpg"
+    },{
+        "hotname":"Samsung Galaxy Buds",
+        "src":"../img/watch/watch-nav/2.jpg"
+    },{
+        "hotname":"Samsung Galaxy Watch LTE版",
+        "src":"../img/watch/watch-nav/3.jpg"
+    },{
+        "hotname":"Galaxy Watch Active",
+        "src":"../img/watch/watch-nav/4.jpg"
+    }],["可穿戴设备","","",""]
+],[
+    [{
+        "hotname":"Galaxy Tab S6",
+        "src":"../img/computer/com-nav/1.jpg"
+    },{
+        "hotname":"Galaxy Tab S5e WLAN",
+        "src":"../img/computer/com-nav/2.jpg"
+    },{
+        "hotname":"三星星曜 730XBE-K01",
+        "src":"../img/computer/com-nav/3.jpg"
+    },{
+        "hotname":"三星笔记本星曜Pen Pro 930SBE-K01",
+        "src":"../img/computer/com-nav/4.jpg"
+    }],["Notebook 9","Notebook 7","Galaxy Tab S","Galaxy Tab A"]
+],[
+    [{
+        "hotname":"智能网关",
+        "src":"../img/jiaju/jiaju-nav/1.jpg"
+    },{
+        "hotname":"智能插座",
+        "src":"../img/jiaju/jiaju-nav/2.jpg"
+    },{
+        "hotname":"智能遥控器",
+        "src":"../img/jiaju/jiaju-nav/3.jpg"
+    },{
+        "hotname":"三星智能锁 SHP-DP739",
+        "src":"../img/jiaju/jiaju-nav/4.jpg"
+    }],["健康生活类","便携生活类","安全智能类","时尚酷玩类"]
+]
+,[
+    [{
+        "hotname":"AKG Y500BT 无线蓝牙耳机",
+        "src":"../img/peijian/peijian-nav/1.jpg"
+    },{
+        "hotname":"Galaxy S10 漫威漫画保护壳",
+        "src":"../img/peijian/peijian-nav/2.jpg"
+    },{
+        "hotname":"Galaxy Note10 镜面保护套",
+        "src":"../img/peijian/peijian-nav/3.jpg"
+    },{
+        "hotname":"Galaxy S10e 硅胶保护壳",
+        "src":"../img/peijian/peijian-nav/4.jpg"
+    }],["保护类","电源类","音频类","存储类","连接类"]
+]
+]

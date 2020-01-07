@@ -3,24 +3,28 @@
     "descr":"现货销售",
     "price":"￥15999",
     "src":"../img/hot/hot1.jpg",
-    "tip":"../img/hot/1.jpg"
+    "tip":"../img/hot/1.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 },{
     "hotname":"Galaxy Note10+ 5G",
     "descr":"换新补贴高至800元 享好礼",
     "price":"￥7999",
     "src":"../img/hot/hot2.jpg",
-    "tip":"../img/hot/2.jpg"
+    "tip":"../img/hot/2.jpg",
+    "allimg":["../img/iphone/Galaxy-Note/Galaxy-Not-10/1.jpg","../img/iphone/Galaxy-Note/Galaxy-Not-10/2.jpg","../img/iphone/Galaxy-Note/Galaxy-Not-10/3.jpg","../img/iphone/Galaxy-Note/Galaxy-Not-10/4.jpg"]
 },{
     "hotname":"Galaxy Note10",
     "descr":"12期免息 优惠600元",
     "price":"￥5999",
     "src":"../img/hot/hot3.jpg",
-    "tip":"../img/hot/3.jpg"
+    "tip":"../img/hot/3.jpg",
+    "allimg":["../img/iphone/Galaxy-Note/Galaxy-Note9/1.jpg","../img/iphone/Galaxy-Note/Galaxy-Note9/2.jpg","../img/iphone/Galaxy-Note/Galaxy-Note9/3.jpg","../img/iphone/Galaxy-Note/Galaxy-Note9/4.jpg"]
 },{
     "hotname":"Galaxy S10+8GB+128GB",
     "descr":"优惠1400 享好礼",
     "price":"￥5599",
     "src":"../img/hot/hot4.jpg",
-    "tip":"../img/hot/4.jpg"
+    "tip":"../img/hot/4.jpg",
+    "allimg":["../img/iphone/Galaxy-Note/Galaxy-Not-10/1.jpg","../img/iphone/Galaxy-Note/Galaxy-Not-10/2.jpg","../img/iphone/Galaxy-Note/Galaxy-Not-10/3.jpg","../img/iphone/Galaxy-Note/Galaxy-Not-10/4.jpg"]
 }
 ]

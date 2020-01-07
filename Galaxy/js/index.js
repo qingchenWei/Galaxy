@@ -47,9 +47,9 @@ class Index{
                 var str =``;
                 var str1 =``;
                 for(var i=0;i<that.allnavRes[that.i][0].length;i++){
-                    str+= `<a href="##"><li >
+                    str+= `<li ><a href="../html/goodsitem.html">
                     <img  src="${that.allnavRes[that.i][0][i].src}"><span class="hotname">${that.allnavRes[that.i][0][i].hotname}</span>
-                    </li></a>`;
+                    </a></li>`;
                 }
                 for(var j=0;j<that.allnavRes[that.i][1].length;j++){
                     str1 += `<li><a href="../html/goodslist.html">${that.allnavRes[that.i][1][j]}</a></li>`
@@ -58,7 +58,9 @@ class Index{
                 $(".nav-small").html(str1); 
                 $(".nav-small").children("li").click(function(){
                     localStorage.setItem("index",$(this).index())
-                    console.log(111)
+                }) 
+                $(".nav-img").children("li").click(function(){
+                    localStorage.setItem("mes",JSON.stringify(that.allnavRes[that.i][0][$(this).index()]))
                 }) 
                 
             })
@@ -167,14 +169,17 @@ class Index{
             that.hotRes = JSON.parse(res);
             var str =``;
             for(var i=0;i<that.hotRes.length;i++){
-                str+=`<li class="hotPin">                <span class="hotname">${that.hotRes[i].hotname}</span>
+                str+=`<li class="hotPin"><a href="../html/goodsitem.html">               <span class="hotname">${that.hotRes[i].hotname}</span>
                 <span class="descr">${that.hotRes[i].descr}</span> 
                 <span class="price">${that.hotRes[i].price}</span> 
                 <img  src="${that.hotRes[i].src}">
-                <em><img  src="${that.hotRes[i].tip}"></em>
+                <em><img  src="${that.hotRes[i].tip}"></em></a> 
                 </li>`;
             }
-            that.hot.innerHTML=str;  
+            that.hot.innerHTML=str;
+            $(".hot").children("li").click(function(){
+                localStorage.setItem("mes",JSON.stringify(that.hotRes[$(this).index()]))
+            })
         })
     }
     iphoneShow(){
@@ -188,7 +193,7 @@ class Index{
                     that.index=$(this).index();
                     that.ajaxGet();
              });
-
+           
     }
     watchShow(){
         var that=this;
@@ -198,18 +203,23 @@ class Index{
             var str =``;
             var str1 =``;
             for(var i=0;i<that.wacthRes.length-1;i++){
-                str+=`<li class="hotPin">
+                str+=`<li class="hotPin"><a href="../html/goodsItem.html">
                 <img  src="${that.wacthRes[i].src}">       <span class="hotname">${that.wacthRes[i].hotname}</span>
                 <span class="descr">${that.wacthRes[i].descr}</span> 
-                <span class="price">${that.wacthRes[i].price}</span> 
+                <span class="price">${that.wacthRes[i].price}</span></a>
                 </li>`;
             }
-            str1 = `<a href="##"><img src="${that.wacthRes[i].src}"></a>`
+            str1 = `<a href="../html/goodsItem.html"><img src="${that.wacthRes[i].src}"></a>`
 
             that.watchMain.innerHTML=str;  
             that.watchLeft.innerHTML=str1;  
-        })
-
+            $(".watch-main").children("li").click(function(){
+                localStorage.setItem("mes",JSON.stringify(that.wacthRes[$(this).index()]))
+            })
+            $(".watchleft>a").click(function(){
+                localStorage.setItem("mes",JSON.stringify(that.wacthRes[i]))
+            })
+        })   
     }
     ajaxGet(){
         var that = this;
@@ -218,16 +228,23 @@ class Index{
             var str =``;
             var str1 =``;
             for(var i=0;i<that.iphoneRes[that.index].length-1;i++){
-                str+=`<li class="hotPin">
+                str+=`<li class="hotPin"><a href="../html/goodsItem.html">
                 <img  src="${that.iphoneRes[that.index][i].src}"><span class="hotname">${that.iphoneRes[that.index][i].hotname}</span>
                 <span class="descr">${that.iphoneRes[that.index][i].descr}</span> 
-                <span class="price">${that.iphoneRes[that.index][i].price}</span> 
+                <span class="price">${that.iphoneRes[that.index][i].price}</span></a>
                 </li>`;
             }
-            str1 = `<a href="##"><img src="${that.iphoneRes[[that.index]][i].src}"></a>`
+            str1 = `<a href="../html/goodsItem.html"><img src="${that.iphoneRes[[that.index]][i].src}"></a>`
 
             that.iphoneMain.innerHTML=str;  
             that.left.innerHTML=str1;  
+            $(".iphone-main").children("li").click(function(){
+                localStorage.setItem("mes",JSON.stringify(that.iphoneRes[that.index][$(this).index()]))
+            })
+            $(".left>a").click(function(){
+                localStorage.setItem("mes",JSON.stringify(that.iphoneRes[that.index][i]))
+            })
+
         })
     }
     floor(){

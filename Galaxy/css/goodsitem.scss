@@ -1,0 +1,132 @@
+body{background: white;
+.goodsmain {
+    margin-top: 100px;
+    height: 700px;
+    .goods-left {
+      float: left;
+      width: 50%;
+      margin-top: 72px;
+      position: relative;
+      margin-top: 74px;
+      .imgBox {
+        width: 420px;
+        height: 420px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        li {
+          width: 420px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          img {
+            display: inline-block;
+            width: 420px;
+            height: 420px;
+          }
+          span {
+            width: 100px;
+            height: 100px;
+            opacity: .3;
+            background: rgb(209, 207, 200);
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+        }
+        }
+      }
+      .bigBox{
+        width: 420px;
+        height: 420px;
+        overflow: hidden;
+        position: relative;
+        top: -420px;
+        left:400px;
+        box-shadow: 0 0 5px black;
+        cursor: pointer;
+        display: none;
+        z-index: 5;
+        li {
+          width: 420px;
+          position: absolute;
+          left: 0;
+          top: 0px;
+          img {
+            display: inline-block;
+            width: 1260px;
+            height: 1260px;
+            position: absolute;
+                left: 0px;
+                top: 0px;
+          }
+        }
+      }
+      .list {
+        position: absolute;
+        left: -100px;
+        top: 20px;
+        li {
+          width: 70px;
+          height: 90px;
+          cursor: pointer;
+          margin-top: 10px;
+        }
+      }
+    }
+    .goods-right {
+      border-left:2px solid black ;
+      margin-top: 100px;
+      float: left;
+      width: 45%;
+      padding-left: 50px;
+      .tip{font: 16px/2 "";
+         color: blue; 
+         overflow: visible;
+        }
+      .name{font: 600 30px/2 "";
+      }
+      .description{
+        width: 500px;
+        li{
+          list-style-type:disc;
+          font: 20px/2 "";
+        }
+      }
+      p{
+        width: 100px;
+        height: 60px;
+        font: 20px/2 "";
+        text-align: center;
+      }
+      .p1,.p2{
+        margin-right: 20px;
+        display: inline-block;
+        width: 160px;
+        height: 60px;
+        border:1px solid black;
+        font: 20px/3 "";
+        text-align: center;
+        cursor: pointer;
+      }
+      input{
+        margin: 30px;
+        width: 200px;
+        height: 70px;
+        border-radius: 20px;
+        background: rgb(52, 127, 238);
+        border: 0;
+        font:600 20px/70px "";
+        color: white;
+      }
+      .price0{
+        font: 20px/3 "";
+      }
+      .price{
+        font:600 20px/2 "";
+        color: red;
+      }
+
+    }
+  }
+}

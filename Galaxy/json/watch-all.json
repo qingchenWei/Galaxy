@@ -2,34 +2,44 @@
     "hotname":"Samsung Galaxy Watch LTE版",
     "descr":"抢先收藏 快人一步",
     "price":"¥3999",
-    "src":"../img/watch/1.jpg"
+    "src":"../img/watch/1.jpg",
+    "allimg":["../img/watch/Samsung-Galaxy-Watch-LTE/1.jpg","../img/watch/Samsung-Galaxy-Watch-LTE/2.jpg","../img/watch/Samsung-Galaxy-Watch-LTE/3.jpg","../img/watch/Samsung-Galaxy-Watch-LTE/4.jpg"]
 },{
     "hotname":"Galaxy Watch Active",
     "descr":"新品上市 现货销售",
     "price":"¥1999",
-    "src":"../img/watch/2.jpg"
+    "src":"../img/watch/2.jpg",
+    "allimg":["../img/watch/Galaxy-Watch-Active/1.jpg","../img/watch/Galaxy-Watch-Active/2.jpg","../img/watch/Galaxy-Watch-Active/3.jpg","../img/watch/Galaxy-Watch-Active/4.jpg"]
 },{
     "hotname":"Samsung Galaxy Buds",
     "descr":"换新补贴至高800元 享好礼",
     "price":"¥3999",
-    "src":"../img/watch/3.jpg"
+    "src":"../img/watch/3.jpg",
+    "allimg":["../img/watch/Samsung-Galaxy-Buds/1.jpg","../img/watch/Samsung-Galaxy-Buds/2.jpg","../img/watch/Samsung-Galaxy-Buds/3.jpg","../img/watch/Samsung-Galaxy-Buds/4.jpg"]
 },{
     "hotname":"Samsung Galaxy Watch",
     "descr":"优惠1400 享好礼",
     "price":"￥2599",
-    "src":"../img/watch/4.jpg"
+    "src":"../img/watch/4.jpg",
+    "allimg":["../img/watch/Samsung-Galaxy-Watch/1.jpg","../img/watch/Samsung-Galaxy-Watch/2.jpg","../img/watch/Samsung-Galaxy-Watch/3.jpg","../img/watch/Samsung-Galaxy-Watch/4.jpg"]
 },{
     "hotname":"Samsung Galaxy Watch Active2",
     "descr":"优惠500元 赠好礼",
     "price":"¥3999",
-    "src":"../img/watch/5.jpg"
+    "src":"../img/watch/5.jpg",
+    "allimg":["../img/watch/Samsung-GalaxyWatch-Active2/1.jpg","../img/watch/Samsung-GalaxyWatch-Active2/2.jpg","../img/watch/Samsung-GalaxyWatch-Active2/3.jpg","../img/watch/Samsung-GalaxyWatch-Active2/4.jpg"]
 },{
     "hotname":"Samsung Galaxy Watch Active",
     "descr":"优惠100元 享3期免息",
     "price":"¥3699",
-    "src":"../img/watch/6.jpg"
+    "src":"../img/watch/6.jpg",
+    "allimg":["../img/watch/Galaxy-Watch-Active/1.jpg","../img/watch/Galaxy-Watch-Active/2.jpg","../img/watch/Galaxy-Watch-Active/3.jpg","../img/watch/Galaxy-Watch-Active/4.jpg"]
 }
 ,{
-    "src":"../img/watch/big.png"
+    "src":"../img/watch/big.png",
+    "allimg":["../img/watch/Samsung-GalaxyWatch-Active2/1.jpg","../img/watch/Samsung-GalaxyWatch-Active2/2.jpg","../img/watch/Samsung-GalaxyWatch-Active2/3.jpg","../img/watch/Samsung-GalaxyWatch-Active2/4.jpg"],
+    "hotname":"Samsung Galaxy Watch Active",
+    "descr":"优惠100元 享3期免息",
+    "price":"¥3699"
 }
 ]

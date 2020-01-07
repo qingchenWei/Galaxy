@@ -2,136 +2,177 @@
     "hotname":"三星W20 5G",
     "descr":"抢先收藏 快人一步",
     "price":"¥19999",
-    "src":"../img/iphone/all/1.jpg"
+    "src":"../img/iphone/all/1.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 },{
     "hotname":"Samsung Galaxy Fold",
     "descr":"新品上市 现货销售",
     "price":"¥15999",
-    "src":"../img/iphone/all/2.jpg"
+    "src":"../img/iphone/all/2.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 },{
     "hotname":"Galaxy Note10+ 5G",
     "descr":"换新补贴至高800元 享好礼",
     "price":"¥7999",
-    "src":"../img/iphone/all/3.jpg"
+    "src":"../img/iphone/all/3.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 },{
     "hotname":"Galaxy S10+8GB+128GB",
     "descr":"优惠1400 享好礼",
     "price":"￥5599",
-    "src":"../img/iphone/all/4.jpg"
+    "src":"../img/iphone/all/4.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 },{
     "hotname":"Galaxy A90 5G",
     "descr":"优惠500元 赠好礼",
     "price":"¥3999",
-    "src":"../img/iphone/all/5.jpg"
+    "src":"../img/iphone/all/5.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 },{
     "hotname":"Samsung Galaxy M30s",
     "descr":"优惠100元 享3期免息",
     "price":"¥1699",
-    "src":"../img/iphone/all/6.jpg"
+    "src":"../img/iphone/all/6.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 }
 ,{
-    "src":"../img/iphone/all/big.png"
+    "src":"../img/iphone/all/big.png",
+    "hotname":"Samsung Galaxy M30s",
+    "descr":"优惠100元 享3期免息",
+    "price":"¥1699",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 }
 ],[{
-    "hotname":"三星W20 5G",
-    "descr":"抢先收藏 快人一步",
-    "price":"¥19999",
-    "src":"../img/iphone/Galaxy-Note/1.jpg"
-},{
-    "hotname":"Samsung Galaxy Fold",
-    "descr":"新品上市 现货销售",
-    "price":"¥15999",
-    "src":"../img/iphone/Galaxy-Note/2.jpg"
+    "hotname":"Galaxy S10e",
+    "descr":"优惠1100元 享12期免息",
+    "price":"¥3899",
+    "src":"../img/iphone/Galaxy-Note/1.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 },{
     "hotname":"Galaxy Note10+ 5G",
-    "descr":"换新补贴至高800元 享好礼",
-    "price":"¥7999",
-    "src":"../img/iphone/Galaxy-Note/3.jpg"
+    "descr":"领券优惠400元",
+    "price":"￥7,999",
+    "src":"../img/iphone/Galaxy-Note/2.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 },{
-    "hotname":"Galaxy S10+8GB+128GB",
+    "hotname":"Galaxy S10+ 8GB+128GB版本",
+    "descr":"优惠1400",
+    "price":"￥5,599",
+    "src":"../img/iphone/Galaxy-Note/3.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
+},{
+    "hotname":"Galaxy S10+ 12GB+1TB版本",
     "descr":"优惠1400 享好礼",
-    "price":"￥5599",
-    "src":"../img/iphone/Galaxy-Note/4.jpg"
+    "price":"￥10,999",
+    "src":"../img/iphone/Galaxy-Note/4.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 },{
-    "hotname":"Galaxy A90 5G",
-    "descr":"优惠500元 赠好礼",
-    "price":"¥3999",
-    "src":"../img/iphone/Galaxy-Note/5.jpg"
+    "hotname":"Galaxy S10 8GB+512GB版本",
+    "descr":"",
+    "price":"￥7,699",
+    "src":"../img/iphone/Galaxy-Note/5.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 },{
-    "hotname":"Samsung Galaxy M30s",
+    "hotname":"Galaxy S10+ 8GB+512GB版本",
     "descr":"优惠100元 享3期免息",
-    "price":"¥1699",
-    "src":"../img/iphone/Galaxy-Note/6.jpg"
+    "price":"￥8,699",
+    "src":"../img/iphone/Galaxy-Note/6.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 }
 ,{
-    "src":"../img/iphone/Galaxy-Note/big.png"
+
+    "src":"../img/iphone/Galaxy-Note/big.png",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"],
+    "hotname":"Samsung Galaxy M30s",
+    "descr":"优惠100元 享3期免息",
+    "price":"¥1699"
 }
 ],[{
-    "hotname":"三星W20 5G",
-    "descr":"抢先收藏 快人一步",
-    "price":"¥19999",
-    "src":"../img/iphone/all/1.jpg"
-},{
-    "hotname":"Samsung Galaxy Fold",
-    "descr":"新品上市 现货销售",
-    "price":"¥15999",
-    "src":"../img/iphone/all/2.jpg"
-},{
     "hotname":"Galaxy Note10+ 5G",
-    "descr":"换新补贴至高800元 享好礼",
-    "price":"¥7999",
-    "src":"../img/iphone/all/3.jpg"
+    "descr":"领券优惠400元",
+    "price":"￥7,999",
+    "src":"../img/iphone/all/1.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 },{
-    "hotname":"Galaxy S10+8GB+128GB",
-    "descr":"优惠1400 享好礼",
-    "price":"￥5599",
-    "src":"../img/iphone/all/4.jpg"
+    "hotname":"Galaxy Note10+ 5G 密斯白",
+    "descr":"换新补贴800元 赠好礼",
+    "price":"￥7,999",
+    "src":"../img/iphone/all/2.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
+},{
+    "hotname":"Galaxy Note10+ 5G 麦昆黑",
+    "descr":"换新补贴至高800元 赠好礼",
+    "price":"¥7999",
+    "src":"../img/iphone/all/3.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
+},{
+    "hotname":"Galaxy Note10 莫奈彩",
+    "descr":"优惠900元 享12期免息",
+    "price":"¥6599",
+    "src":"../img/iphone/all/4.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 },{
     "hotname":"Galaxy A90 5G",
     "descr":"优惠500元 赠好礼",
     "price":"¥3999",
-    "src":"../img/iphone/all/5.jpg"
+    "src":"../img/iphone/all/5.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 },{
+    "hotname":"Galaxy Note10 麦昆黑",
+    "descr":"优惠900元 享12期免息",
+    "price":"¥6599",
+    "src":"../img/iphone/all/6.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
+}
+,{
+    "src":"../img/iphone/all/big.png",
     "hotname":"Samsung Galaxy M30s",
     "descr":"优惠100元 享3期免息",
     "price":"¥1699",
-    "src":"../img/iphone/all/6.jpg"
-}
-,{
-    "src":"../img/iphone/all/big.png"
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 }
 ],[{
-    "hotname":"三星W20 5G",
-    "descr":"抢先收藏 快人一步",
-    "price":"¥19999",
-    "src":"../img/iphone/Galaxy-Note/1.jpg"
-},{
-    "hotname":"Samsung Galaxy Fold",
-    "descr":"新品上市 现货销售",
-    "price":"¥15999",
-    "src":"../img/iphone/Galaxy-Note/2.jpg"
-},{
-    "hotname":"Galaxy Note10+ 5G",
-    "descr":"换新补贴至高800元 享好礼",
-    "price":"¥7999",
-    "src":"../img/iphone/Galaxy-Note/3.jpg"
-},{
-    "hotname":"Galaxy S10+8GB+128GB",
-    "descr":"优惠1400 享好礼",
-    "price":"￥5599",
-    "src":"../img/iphone/Galaxy-Note/4.jpg"
-},{
     "hotname":"Galaxy A90 5G",
-    "descr":"优惠500元 赠好礼",
-    "price":"¥3999",
-    "src":"../img/iphone/Galaxy-Note/5.jpg"
+    "descr":"优惠1000元 换新补贴400元",
+    "price":"¥3499",
+    "src":"../img/iphone/Galaxy-Note/1.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 },{
-    "hotname":"Samsung Galaxy M30s",
-    "descr":"优惠100元 享3期免息",
-    "price":"¥1699",
-    "src":"../img/iphone/Galaxy-Note/6.jpg"
+    "hotname":"Galaxy A70s",
+    "descr":"享6期免息 赠好礼",
+    "price":"¥2699",
+    "src":"../img/iphone/Galaxy-Note/2.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
+},{
+    "hotname":"Galaxy A50s",
+    "descr":"6期免息 赠好礼",
+    "price":"¥1999",
+    "src":"../img/iphone/Galaxy-Note/3.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
+},{
+    "hotname":"Galaxy A80",
+    "descr":"优惠1300元 享6期免息",
+    "price":"¥2499",
+    "src":"../img/iphone/Galaxy-Note/4.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
+},{
+    "hotname":"Galaxy A70 8GB+128GB",
+    "descr":"至高优惠600元 享6期免息",
+    "price":"¥2199",
+    "src":"../img/iphone/Galaxy-Note/5.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
+},{
+    "hotname":"Galaxy A8s 8GB+128GB",
+    "descr":"至高优惠1300元",
+    "price":"¥1799",
+    "src":"../img/iphone/Galaxy-Note/6.jpg",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"]
 }
 ,{
-    "src":"../img/iphone/Galaxy-Note/big.png"
+    "src":"../img/iphone/Galaxy-Note/big.png",
+    "allimg":["../img/iphone/Samsung-Galaxy-Fold/1.jpg","../img/iphone/Samsung-Galaxy-Fold/2.jpg","../img/iphone/Samsung-Galaxy-Fold/3.jpg","../img/iphone/Samsung-Galaxy-Fold/4.jpg"],
+    "hotname":"Samsung Galaxy M30s",
+    "descr":"优惠100元 享3期免息",
+    "price":"¥1699"
 }
 ]]

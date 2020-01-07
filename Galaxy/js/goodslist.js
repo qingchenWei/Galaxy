@@ -25,20 +25,21 @@ class goodsList{
         })
         ajaxGet(arrurl[b],function(res){
             that.alliphonRes = JSON.parse(res);
+            let arr=[]
         for(var j = 0;j<that.alliphonRes.length;j++){
             for(var i=0;i<that.alliphonRes[j].length;i++){
-                str+=`<li>
+                str+=`<li><a href="../html/goodsitem.html">
                 <img  src="${that.alliphonRes[j][i].src}"><span class="name">${that.alliphonRes[j][i].hotname}</span>
                 <span class="descr">${that.alliphonRes[j][i].descr}</span> 
-                <span class="price">${that.alliphonRes[j][i].price}</span> 
+                <span class="price">${that.alliphonRes[j][i].price}</span></a> 
                 </li>`;
+                arr.push(that.alliphonRes[j][i])
             }
 
         }
             $(".goods").html(str);
             $(".goods").children("li").click(function(){
-                console.log($(this).index())
-                localStorage.setItem("mes",JSON.stringify(this.alliphonRes[0][$(this).index()]))
+                localStorage.setItem("mes",JSON.stringify(arr[$(this).index()]))
             })  
             if(localStorage.getItem("index")){
                 that.display(that.liIndex)

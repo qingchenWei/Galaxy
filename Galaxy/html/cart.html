@@ -1,4 +1,4 @@
- <html lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,13 +6,13 @@
         <link rel="stylesheet" href="../css/index.css" type="text/css">
         <link rel="stylesheet" href="../css/public.css"  type="text/css">
         <title>三星网上商城</title>
-        <link rel="stylesheet" href="../css/goodslist.css">
+        <link rel="stylesheet" href="../css/cart.css">
     </head>
     <body>
         <div class="navBox">
             <div class="nav margin">
                 <ul class="nav-left">
-                    <li><a href="##">智能手机</a>
+                    <li><a href="goodslist.html">智能手机</a>
                         <div class="nav-tip">
                             <div class="margin">
                                 <ul class="nav-img">
@@ -21,23 +21,14 @@
                                 </ul>
                             </div>
                     </li>
-                    <li><a href="##">可穿戴设备</a>
+                    <li><a href="goodslist.html">可穿戴设备</a>
                         <div class="nav-tip">
                             <div class="margin">
                                 <ul class="nav-img">
                                 </ul>
                             </div>
                     </li>
-                    <li><a href="##">个人电脑</a>
-                        <div class="nav-tip">
-                            <div class="margin">
-                                <ul class="nav-img">
-                                </ul>
-                                <ul class="nav-small">
-                                </ul>
-                            </div>
-                    </li>
-                    <li><a href="##">智能家居</a>
+                    <li><a href="goodslist.html">个人电脑</a>
                         <div class="nav-tip">
                             <div class="margin">
                                 <ul class="nav-img">
@@ -46,7 +37,16 @@
                                 </ul>
                             </div>
                     </li>
-                    <li><a href="##">配件</a>
+                    <li><a href="goodslist.html">智能家居</a>
+                        <div class="nav-tip">
+                            <div class="margin">
+                                <ul class="nav-img">
+                                </ul>
+                                <ul class="nav-small">
+                                </ul>
+                            </div>
+                    </li>
+                    <li><a href="goodslist.html">配件</a>
                         <div class="nav-tip">
                             <div class="margin">
                                 <ul class="nav-img">
@@ -71,27 +71,47 @@
                 </div>
             </div>
         </div>
-        <div class="main margin">
-            <div class="main-left">
-                <p>分类</p>
-                <ul class="allList">
-                    <!-- <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li> -->
-                </ul>
+        <div class="cartMain margin">
+            <p class="name">购物车</p>
+            <table >
+                <thead>
+                    <th><input type="checkbox">全选</th>
+                    <th>商品展示</th>
+                    <th>商品名</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>金额</th>
+                    <th></th>
+                </thead>
+                <tbody class="box" align="center">
+                    <tr align="center">
+                        <td><input type="checkbox"></td>
+                        <td><img src=""></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td>
+                            <input type="button" value="-">
+                            <span></span>
+                            <input type="button" value="+">
+                        </td>
+                        <td><span></span></td>
+                        <td><input class="delete" type="button" value="删除"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="sumprice">
+                <span class="left">全场免运费，下单后1~2天内发货（预售等特殊情况除外）</span>
+                <input class="clear" type="button" value="清空购物车">
+                <span>总价：</span>
+                <span>￥3999</span>
             </div>
-            <div class="main-right">
-                <ul class="goods">
-                    <!-- <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li> -->
-                </ul>
+            <div class="bottom">
+                <a href="##">&lt;继续购物</a>
+                <input type="button" value="结算">
             </div>
         </div>
     </body>
     <script src="../js/jquery.js"></script>
     <script src="../js/ajax.js"></script>
-    <script src="../js/goodslist.js"></script>
+    <script src="../js/cart.js"></script>
     </html>

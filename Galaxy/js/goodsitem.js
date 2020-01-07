@@ -12,6 +12,7 @@ class goodsItem{
         this.imgshow();
         this.bigImg(this.now);
         this.date();
+        this.add()
     }
     addEvent(){
         var that = this;
@@ -46,8 +47,6 @@ class goodsItem{
                     localStorage.setItem("index",$(this).index())
                 }) 
                 $(".nav-img").children("li").click(function(){
-                    console.log($(this).index())
-                    console.log(that.allnavRes[that.i][0][$(this).index()])
                     localStorage.setItem("mes",JSON.stringify(that.allnavRes[that.i][0][$(this).index()]))
                 }) 
                 
@@ -61,6 +60,7 @@ class goodsItem{
             this.res=JSON.parse(localStorage.getItem("mes"))
             var str =``;
             var str1=``;
+            console.log(that.res)
             for(var i=0;i<that.res.allimg.length;i++){
                 str+=`<li class="banImg"> <img  src="${that.res.allimg[i]}" alt=""><span></span></li>`;
                 str1 +=`<li class="listBtn"></li>`
@@ -167,6 +167,38 @@ class goodsItem{
         this.tip.innerHTML = this.mes.descr;
         this.name.innerHTML = this.mes.hotname;
         this.price.innerHTML = this.mes.price;
+    }
+    add(){
+        this.addcart = document.querySelector(".addcart");
+        
+        this.addcart.onclick = function(){
+            let arr =[];
+            let carcount={};
+            let nowcart = JSON.parse(localStorage.getItem("mes"));
+            carcount.src=nowcart.src;
+            carcount.price=nowcart.price;
+            carcount.hotname=nowcart.hotname;
+            carcount.num=1;
+                arr.push(carcount);
+           if(localStorage.hasOwnProperty("cart")){
+            let cart = JSON.parse(localStorage.getItem("cart"));
+                for(var i=0;i<cart.length;i++){
+                    if( carcount.hotname==cart[i].hotname){
+                        alert("商品已存在")
+                        break;
+                    }else{
+                        for(var j=0;j<cart.length;j++){
+                            arr.push(cart[i])
+                        }
+                        alert("添加成功")
+                        localStorage.setItem("cart",JSON.stringify(arr))
+                        break;
+                    }
+                }
+           }else{
+            localStorage.setItem("cart",JSON.stringify(arr))
+           }
+        }
     }
 }
 

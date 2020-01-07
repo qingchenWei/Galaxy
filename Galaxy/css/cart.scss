@@ -1,0 +1,82 @@
+.cartMain{
+    margin-top: 100px;
+    .name{
+        font: 600 30px/2 "";
+    }
+    table{
+        th{
+            width: 200px;
+        }
+        th:nth-child(1){
+            width: 60px;
+            text-align: center;
+        }
+        th:nth-child(7){
+            width: 90px;
+            text-align: center;
+        }
+        tr{
+            text-align: center;
+        }
+        td{
+            font-size: 16px;
+            img{
+                width: 70px;
+                height: 70px;
+            }
+            input{
+                width: 50px;
+                height: 30px;
+                border: 0;
+                background: #ccc;
+            }
+
+        }
+        
+    }
+    .sumprice{
+        padding-right: 150px;
+        text-align: right; 
+        font: 600 30px/50px "";
+        color: rgb(17, 17, 119);
+        .left{
+            float: left;
+            font: 16px/50px "";
+        }
+        .clear{
+            float: left;
+            width: 180px;
+            height: 50px;
+            background: red;
+            color: white;
+            font: 16px/50px "";
+            border: 0;
+
+        }
+        
+    }
+    .bottom{
+        height: 50px;
+        width: 94%;
+        background: #ccc;
+        a{
+            float: left;
+            font:  20px/50px "";
+            color: rgb(55, 55, 175);
+            
+        }
+        input{
+            float: right;
+            width: 270px;
+            height: 50px;
+            background: rgb(17, 17, 119);
+            color: white;
+            font: 600 20px/50px "";
+            border: 0;
+            cursor: pointer;
+        }
+        input:hover{
+            background: rgb(28, 28, 194);
+        }
+    }
+}

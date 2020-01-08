@@ -7,9 +7,11 @@ class Index{
         this.new = document.querySelector(".new");
         this.hot = document.querySelector(".hot");
         this.left = document.querySelector(".left");
+        this.log = document.querySelector(".log");
         this.watchMain = document.querySelector(".watch-main");
         this.iphoneMain = document.querySelector(".iphone-main");
         this.watchLeft = document.querySelector(".watchleft");
+        this.cartPage = document.querySelector(".cart");
         this.bannerUrl = "../json/banner.json";
         this.hotUrl = "../json/hot.json"
         this.newUrl = "../json/new.json"
@@ -25,7 +27,35 @@ class Index{
         this.iphoneShow();
         this.watchShow();
         this.floor();
+        this.showname();
+        this.myselfMain();
         this.index = 0;
+    }
+    showname(){
+        var that=this;
+        let user = JSON.parse(localStorage.getItem("user"));
+        user.some(function(val,index){
+            if(val.off==1){
+                that.i=index;
+            } 
+        })
+        if(this.i!=undefined){
+            if(user[that.i].off===1){
+                that.log.innerHTML= "<i></i>退出登录";
+                this.log.href="../html/index.html";
+                this.cartPage.href="../html/cart.html";
+                $(".floorcart")[0].href="../html/cart.html"
+                this.log.onclick = function(){
+                    user[that.i].off=0;
+                    localStorage.setItem("user",JSON.stringify(user));
+                    this.log.href="../html/login.html";
+                }
+            }
+            if(user[that.i].off===0){
+                that.log.innerHTML= "<i></i>登录/注册";
+            }
+        }
+       
     }
     addEvent(){
         var that = this;
@@ -251,9 +281,24 @@ class Index{
         document.onscroll = function(){
             if($(".new").offset().top<=$(document).scrollTop()){
                 $(".floor").css({"position":"fixed","left":"100px","top":"72px"})
+                $(".RightFloor").css({"position":"fixed","right":"100px","top":"72px"})
             }
             if($(".new").offset().top>$(document).scrollTop()){
                 $(".floor").css({"position":"absolute","left":"100px","top":"-220px"})
+                $(".rightFloor").css({"position":"absolute","right":"100px","top":"-220px"})
+            }
+        }
+    }
+    myselfMain(){
+        let onf=0;
+        $(".myself")[0].onclick = function(){
+            if(onf==0){
+                $(".selfMain").css("display","block")
+                onf=1;
+
+            }else{
+                $(".selfMain").css("display","none")
+                onf=0
             }
         }
     }

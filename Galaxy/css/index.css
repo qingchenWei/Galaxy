@@ -1,6 +1,6 @@
 .navBox{background: white;position: fixed;left: 0; right: 0; top: 0;z-index: 2;}
 .nav{height: 72px; color: black;font: 16px/2 "";border-bottom: 1px solid rgb(238,238,238);margin: 0 auto;}
-.margin{max-width:1250 ; margin: 0 auto;}
+.margin{max-width:1250px; margin: 0 auto;}
 .nav-left{width: 40%;  float: left;}
 .nav-left li{ float: left; margin:0 10px ;}
 .nav-left>li>a{display: inline-block; font: 16px/70px  "";}
@@ -54,6 +54,8 @@ top: 20px; margin: auto;}
 .iphon .left,.watchleft {width: 309px;height: 700px; float: left;}
 .floor{ height: 500px; position: absolute; left:100px; top:-240px;}
 .floor li{height:100px;width: 90px;}
+.rightFloor{ height: 500px; position: absolute; right:100px; top:-240px;}
+.rightFloor li img{height:100px;width: 90px;}
 #onefloor,#twofloor{height: 50px;}
 .watchword{position: relative;}
 .watchword .watchmore{position: absolute; right:30px;top:30px; font: 20px/2 "";}
@@ -67,3 +69,4 @@ top: 20px; margin: auto;}
 .nav-img li:hover{color: blue;}
 .nav-img li{ margin-right:30px;}
 .nav-tip .nav-small{width:30%;height: 200px; float: left;margin-top: 20px;}
+.selfMain{display: none; width:900px ;height: 700px;position: fixed;left: 0; right: 0; bottom: 0; top: 0; margin: auto;background:rgba(240, 237, 237,.6); box-shadow: 0 0 5px black;}

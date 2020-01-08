@@ -5,10 +5,39 @@ class goodsList{
         this.allnavUrl = "../json/allnav.json"
         this.alliphonUrl = "../json/iphone-list.json"
         this.watchallUrl="../json/watch-list.json"
+        this.log = document.querySelector(".log");
+        this.cartPage = document.querySelector(".cart");
         this.addEvent();
         this.a = localStorage.getItem("id");
         this.liIndex = localStorage.getItem("index");
         this.load(this.a);    
+        this.showname();    
+    }
+    showname(){
+        var that=this;
+        let user = JSON.parse(localStorage.getItem("user"));
+        user.some(function(val,index){
+            if(val.off==1){
+                that.i=index;
+            } 
+        })
+        if(this.i!=undefined){
+            console.log(user[that.i].off)
+            if(user[that.i].off===1){
+                that.log.innerHTML= "<i></i>退出登录";
+                this.log.href="../html/index.html";
+                this.cartPage.href="../html/cart.html";
+                this.log.onclick = function(){
+                    user[that.i].off=0;
+                    localStorage.setItem("user",JSON.stringify(user));
+                    this.log.href="../html/login.html";
+                }
+            }
+            if(user[that.i].off===0){
+                that.log.innerHTML= "<i></i>登录/注册";
+            }
+        }
+       
     }
     load(b){
         let str=``;

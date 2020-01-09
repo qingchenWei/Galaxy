@@ -14,8 +14,9 @@ class goodsItem {
         this.imgshow();
         this.bigImg(this.now);
         this.date();
-        this.add()
-        this.showname()
+        this.add();
+        this.showname();
+		this.searchcc();
     }
     showname() {
         var that = this;
@@ -29,19 +30,20 @@ class goodsItem {
             console.log(user[that.i].off)
             if (user[that.i].off === 1) {
                 that.log.innerHTML = "<i></i>退出登录";
+					that.log.style.color="blue";
                 this.log.href = "../html/index.html";
                 this.cartPage.href = "../html/cart.html";
                 this.log.onclick = function () {
                     user[that.i].off = 0;
                     localStorage.setItem("user", JSON.stringify(user));
-                    this.log.href = "../html/login.html";
+                    this.href = "../html/login.html";
                 }
             }
             if (user[that.i].off === 0) {
                 that.log.innerHTML = "<i></i>登录/注册";
             }
         }
-
+		
     }
     addEvent() {
         var that = this;
@@ -93,6 +95,7 @@ class goodsItem {
             str += `<li class="banImg"> <img  src="${that.res.allimg[i]}" alt=""><span></span></li>`;
             str1 += `<li class="listBtn"></li>`
         }
+        
         that.bigBox.innerHTML = str;
         that.imgBox.innerHTML = str;
         that.list.innerHTML = str1;
@@ -222,14 +225,24 @@ class goodsItem {
                         let cart = JSON.parse(localStorage.getItem("cart"));
                         for (var i = 0; i < cart.length; i++) {
                             if (cart[i].hotname === carcount.hotname) {
-                                alert("商品已存在");
+                                $(".mestip>div").html("!").css({"color":"yellow","border":"3px solid yellow"});
+                                $(".mestip>span").html("商品已存在").css("color","yellow");
+                                $(".mestip").css("display","block");
+                                setTimeout(function() {
+                                	 $(".mestip").css("display","none");
+                                }, 1000);
                                 onff = 1;
                                 break;
                             }
                         }
                         if (onff == 0) {
                             cart.push(carcount)
-                            alert("添加成功")
+                           $(".mestip>div").html("√").css("color","green");
+                           $(".mestip>span").html("成功加入购物车!").css("color","white");
+                           $(".mestip").css("display","block");
+                           setTimeout(function() {
+                           	 $(".mestip").css("display","none");
+                           }, 1000);
                             localStorage.setItem("cart", JSON.stringify(cart))
                             onff = 0;
                         }
@@ -241,11 +254,30 @@ class goodsItem {
             }
         }else{
             this.addcart.onclick = function () {
-                alert("请您先登录，再添加商品")
+                $(".mestip>div").html("!").css({"color":"red","border":"3px solid red"});
+                $(".mestip>span").html("请先去登录!").css("color","red");
+				$(".mestip").css("display","block");
+				setTimeout(function() {
+					 $(".mestip").css("display","none");
+				}, 1000);
+               
             }
 
         }
     }
+	searchcc(){
+		var that=this;
+		let keyword=["手机","手表","电脑","家居","配件"]
+		$(".searchBtn").click(function(){
+			keyword.some(function(val,index){
+				if(val==$(".searchword").val()){
+					that.key=index;
+					localStorage.setItem("id",that.key);
+				}
+			})
+		})
+		
+	}
 }
 
 new goodsItem();

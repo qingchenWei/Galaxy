@@ -6,13 +6,14 @@ class goodsItem{
         this.clear = document.querySelector(".clear");
         this.log = document.querySelector(".log");
         this.cartPage = document.querySelector(".cart");
-        this.allnavUrl = "../json/allnav.json"
+        this.allnavUrl = "../json/allnav.json";
         this.now=0;
         this.nowIndex=0;
         this.addEvent();
         this.display();
-        this.behavior()
-        this.showname()
+        this.behavior();
+        this.showname();
+		this.searchcc();
     }
     showname(){
         var that=this;
@@ -26,6 +27,7 @@ class goodsItem{
             if(user[that.i].off===1){
                 this.log.innerHTML= "<i></i>退出登录";
                 this.log.href="../html/index.html";
+				that.log.style.color="blue";
                 this.cartPage.href="../html/cart.html";
                 this.log.onclick = function(){
                     user[that.i].off=0;
@@ -195,5 +197,18 @@ class goodsItem{
         this.num.innerHTML=sumnum;
         this.sumprice.innerHTML="￥"+sumprice+".00";
     }
+	searchcc(){
+		var that=this;
+		let keyword=["手机","手表","电脑","家居","配件"]
+		$(".searchBtn").click(function(){
+			keyword.some(function(val,index){
+				if(val==$(".searchword").val()){
+					that.key=index;
+					localStorage.setItem("id",that.key);
+				}
+			})
+		})
+		
+	}
 }
 new goodsItem();

@@ -61,13 +61,18 @@
             <ul class="nav-right">
                 <li class="tel"><i></i><span>400 071 8899</span></li>
                 <li class="service"><i></i>在线客服</li>
-                <li class="login"><a class="log" href="login.html"><i></i>登录/注册</a></li>
+                <li class="login"><a class="log" href="login.html"><i></i>登录/注册</a>
+					<ul class="login-bottom">
+						<li class="login-self"><a href="##">个人资料</a></li>
+						<li class="quit"><a href="../html/login.html">退出登录</a></li>
+					</ul>
+				</li>
                 <li class="search"><i></i></li>
                 <li><a class="cart" href="login.html"><i></i></a></li>
             </ul>
             <div class="searchBox">
-                <input type="text" placeholder="搜索">
-                <span class="searchBtn"></span>
+                <input type="text" class="searchword" placeholder="搜索">
+                <a href="goodslist.html"  class="searchBtn"><span></span></a>
                 <span class="cancel">×</span>
             </div>
         </div>
@@ -88,28 +93,29 @@
             <li><a href="##"><img src="../img/floor/5.jpg"></a></li>
         </ul>
         <ul class="rightFloor">
-            <li class="myself"><a href="##"><img src="../img/floor/21.jpg"></a></li>
+            <li class="myself"><a class="my" href="login.html"><img src="../img/floor/21.jpg"></a></li>
             <li><a class="floorcart" href="login.html"><img src="../img/floor/22.jpg"></a></li>   
         </ul>
     </div>
     <ul class="hot margin"></ul>
     <div id="onefloor"></div>
     <div class="iphonword">智能手机<i></i></div>
-    <li class="iphon margin">
+    <div class="iphon margin">
         <ul class="iphon-top">
             <li><a href="##">全部</a></li>
             <li><a href="##">Galaxy Note</a></li>
             <li><a href="##">Galaxy S</a></li>
             <li><a href="##">Galaxy A</a></li>
-            <a href="##" class="more">更多<<</a>
+            <a href="goodslist.html" class="more">更多<<</a>
         </ul>
         <div class="count">
             <div class="left"></div>
             <ul class="iphone-main"></ul>
         </div> 
+    </div>
         <div id="twofloor"></div>
         <div class="watchword">可穿戴设备<i></i>
-            <a href="##" class="watchmore">更多<<</a>
+            <!-- <a href="goodslist.html" class="watchmore">更多<<</a> -->
         </div>
     <div class="watch margin">
         <div class="watchcount">
@@ -118,12 +124,35 @@
         </div> 
     </div>
     <div class="selfMain margin">
-        用户名：
-        <input type="text" class="name"><br>
-        手机号：
-        <input type="tel" class="tel"><br>
+        <div class="top"></div>
+        <p>个人资料</p>
+        <ul>
+            <li>
+                <span>用户名：</span>
+                <input type="text" class="name">
+                <span class="update">修改</span>
+            </li>
+            <li>
+                <span>手机号：</span>
+                <input type="tel" class="tel">
+                <span class="redtip">*手机号不可修改</span>
+            </li>
+                <span class="pwdmes">密码管理</span>
+                <span class="pwdtip">*重要信息，请谨慎操作</span>
+                <div class="pwdupdate">
+					<div class="exit">x</div>
+                   <span>旧密码：</span>
+                    <input type="password" class="oldpwd"><br>
+                    <span>新密码：</span>
+                    <input type="password" class="newpwd">
+                </div>
+        </ul>
+		<div class="close">关闭</div>
     </div>
-
+	<div class="mestip">
+		<div id="cri">√</div>
+		<span></span>
+	</div>
     
 </body>
 <script src="../js/jquery.js"></script>

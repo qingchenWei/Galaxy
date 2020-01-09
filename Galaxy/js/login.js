@@ -23,7 +23,7 @@ class Login{
             that.register.style.display="block";
         }
         this.username.onblur = function(){
-            let reg = /^[\u2E80-\u9FFF\w-]{4,10}$/;
+            let reg = /^[\u2E80-\u9FFF\w-]{2,10}$/;
             if(reg.test(this.value)){
                 that.tip2.innerHTML = "用户名合格";
                 that.tip2.style.color = "green";
@@ -92,13 +92,13 @@ class Login{
                 let b=0;
                 for(let i=0;i<user.length;i++){
                     if(that.tel.value==user[i].tel&&that.password.value==user[i].password){
-                        that.tip.innerHTML = "登陆成功,3秒后自动跳转";
+                        that.tip.innerHTML = "登陆成功,1秒后自动跳转";
                         that.tip.style.color = "green";
                         user[i].off=1;
                         localStorage.setItem("user",JSON.stringify(user))
                         setTimeout(function(){
                             window.location.href="../html/index.html";
-                        },3000)
+                        },500)
                         break;
                     }
                 

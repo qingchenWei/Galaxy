@@ -29,8 +29,10 @@ class Index{
         this.floor();
         this.showname();
         this.myselfMain();
+        this.searchcc();
         this.index = 0;
     }
+    
     showname(){
         var that=this;
         let user = JSON.parse(localStorage.getItem("user"));
@@ -41,20 +43,27 @@ class Index{
         })
         if(this.i!=undefined){
             if(user[that.i].off===1){
-                that.log.innerHTML= "<i></i>退出登录";
-                this.log.href="../html/index.html";
+                that.log.innerHTML= "<i></i>"+user[that.i].name;
+				that.log.style.color="blue";
+                this.log.removeAttribute("href");
                 this.cartPage.href="../html/cart.html";
                 $(".floorcart")[0].href="../html/cart.html"
-                this.log.onclick = function(){
-                    user[that.i].off=0;
-                    localStorage.setItem("user",JSON.stringify(user));
-                    this.log.href="../html/login.html";
-                }
             }
             if(user[that.i].off===0){
                 that.log.innerHTML= "<i></i>登录/注册";
             }
         }
+		$(".login").hover(function(){
+			if(that.log.innerHTML!="<i></i>登录/注册"){
+				$(".login-bottom").stop().slideDown(500)
+			}
+		},function(){
+			$(".login-bottom").stop().slideUp(500)
+		})
+		$(".quit").click(function(){
+			user[that.i].off=0;
+			localStorage.setItem("user",JSON.stringify(user));
+		})
        
     }
     addEvent(){
@@ -68,7 +77,7 @@ class Index{
         $(".nav-left").children("li").click(function(){
             localStorage.setItem("id",$(this).index())
         })
-
+	
         $(".nav-left").children("li").hover(function(){
             $(".nav-tip").eq($(this).index()).stop().slideDown(500);
             that.i = $(this).index();
@@ -97,6 +106,7 @@ class Index{
         },function(){
             $(".nav-tip").eq($(this).index()).stop().slideUp()
         })
+
     }
     banner(){
         var that = this;
@@ -223,8 +233,13 @@ class Index{
                     that.index=$(this).index();
                     that.ajaxGet();
              });
-           
+        $(".more").click(function(){
+            localStorage.setItem("id","0");
+        })
+        
+    
     }
+    
     watchShow(){
         var that=this;
         this.url = this.watchUrl;
@@ -280,8 +295,8 @@ class Index{
     floor(){
         document.onscroll = function(){
             if($(".new").offset().top<=$(document).scrollTop()){
-                $(".floor").css({"position":"fixed","left":"100px","top":"72px"})
-                $(".RightFloor").css({"position":"fixed","right":"100px","top":"72px"})
+                $(".floor").css({"position":"fixed","left":"100px","top":"90px","z-Index":"10"})
+                $(".rightFloor").css({"position":"fixed","right":"100px","top":"90px","z-Index":"10"})
             }
             if($(".new").offset().top>$(document).scrollTop()){
                 $(".floor").css({"position":"absolute","left":"100px","top":"-220px"})
@@ -291,16 +306,133 @@ class Index{
     }
     myselfMain(){
         let onf=0;
+        var that=this;
+        this.j=0;
+        let user = JSON.parse(localStorage.getItem("user"));
+        user.some(function(val,index){
+            if(val.off==1){
+                that.i=index;
+            } 
+        })
+        if(this.i!=undefined){
+            if(user[that.i].off===1){
+                $(".my")[0].href="##";
         $(".myself")[0].onclick = function(){
             if(onf==0){
                 $(".selfMain").css("display","block")
                 onf=1;
-
             }else{
                 $(".selfMain").css("display","none")
                 onf=0
             }
         }
+		$(".close").click(function(){
+			$(".selfMain").css("display","none")
+			onf=0;
+		})	
+		$(".exit").click(function(){
+			$(".pwdupdate").css("display","none")
+			$(".pwdmes").html("密码管理");
+		})
+		$(".login-self")[0].onclick = function(){
+		    if(onf==0){
+		        $(".selfMain").css("display","block")
+		        onf=1;
+		    }else{
+		        $(".selfMain").css("display","none")
+		        onf=0
+		    }
+		}
+        user.some(function(val,index){
+            if(val.off==1){
+                that.j=index;
+            }
+        })
+        $(".name").val(user[this.j].name);
+        $(".name").attr("disabled","disabled")
+        $(".tel").val(user[this.j].tel);
+        $(".tel").attr("disabled","disabled")
+        $(".top").html("尊贵的会员,"+user[this.j].name+",您好！！");
+        $(".update").click(function(){
+            if($(".update").html()=="修改"){
+                $(".name").removeAttr("disabled");
+                $(".update").html("确认");
+				
+            }else{
+                user[that.j].name=$(".name").val();
+				$(".log").html("<i></i>"+$(".name").val())
+				 $(".top").html("尊贵的会员,"+$(".name").val()+",您好！！");
+                localStorage.setItem("user",JSON.stringify(user))
+                $(".name").attr("disabled","disabled");
+                $(".update").html("修改");
+            }
+        })
+        $(".pwdmes").click(function(){
+            if($(".pwdmes").html()=="密码管理"){
+                $(".pwdupdate").css("display","block")
+                $(".pwdmes").html("确认");
+            }else{
+                console.log($(".oldpwd").val(),user[that.j].password)
+                if($(".oldpwd").val()==user[that.j].password){
+                    if($(".newpwd").val()!=""){
+                        user[that.j].password=$(".newpwd").val();
+						user[that.j].off=0;
+						localStorage.setItem("user",JSON.stringify(user))
+						$(".pwdmes").html("密码管理");
+						$(".pwdupdate").css("display","none")
+						$(".mestip>div").html("√").css("color","green");
+						$(".mestip>span").html("密码修改成功，请重新登陆！").css("color","white");
+						$(".mestip").css("display","block");
+						setTimeout(function() {
+							 $(".mestip").css("display","none");
+							 window.location.href="../html/login.html";
+						}, 1000);
+						
+                    }else{
+						$(".mestip>div").html("x").css("color","red");
+						$(".mestip>span").html("请填写新密码").css("color","white");
+						$(".mestip").css("display","block");
+						setTimeout(function() {
+							 $(".mestip").css("display","none");
+						}, 1000);
+						
+                    }
+                    
+                }else if($(".newpwd").val()==""){
+                   $(".mestip>div").html("x").css("color","red");
+                   $(".mestip>span").html("请填写信息").css("color","white");
+                   $(".mestip").css("display","block");
+                   setTimeout(function() {
+                   	 $(".mestip").css("display","none");
+                   }, 1000);
+					
+                }else{
+           
+					$(".mestip>div").html("x").css("color","red");
+					$(".mestip>span").html("旧密码不匹配").css("color","white");
+					$(".mestip").css("display","block");
+					setTimeout(function() {
+						 $(".mestip").css("display","none");
+					}, 1000);
+					
+                }
+                
+            }
+        })
     }
+    }
+}
+	searchcc(){
+		var that=this;
+		let keyword=["手机","手表","电脑","家居","配件"]
+		$(".searchBtn").click(function(){
+			keyword.some(function(val,index){
+				if(val==$(".searchword").val()){
+					that.key=index;
+					localStorage.setItem("id",that.key);
+				}
+			})
+		})
+	}
 }
 new Index();

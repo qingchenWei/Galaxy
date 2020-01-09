@@ -1,5 +1,5 @@
 .navBox{background: white;position: fixed;left: 0; right: 0; top: 0;z-index: 2;}
-.nav{height: 72px; color: black;font: 16px/2 "";border-bottom: 1px solid rgb(238,238,238);margin: 0 auto;}
+.nav{height: 72px; color: black;font: 16px/2 ""; border-bottom: 1px solid rgb(238,238,238);margin: 0 auto;}
 .margin{max-width:1250px; margin: 0 auto;}
 .nav-left{width: 40%;  float: left;}
 .nav-left li{ float: left; margin:0 10px ;}
@@ -69,4 +69,19 @@ top: 20px; margin: auto;}
 .nav-img li:hover{color: blue;}
 .nav-img li{ margin-right:30px;}
 .nav-tip .nav-small{width:30%;height: 200px; float: left;margin-top: 20px;}
-.selfMain{display: none; width:900px ;height: 700px;position: fixed;left: 0; right: 0; bottom: 0; top: 0; margin: auto;background:rgba(240, 237, 237,.6); box-shadow: 0 0 5px black;}
+.selfMain{display: none; width:900px ;height: 700px;position: fixed;left: 0; right: 0; bottom: 0; top: 0; margin: auto;background:rgba(240, 237, 237,.9); box-shadow: 0 0 5px black;}
+.selfMain .top{width: 850px; height: 100px; background: #ccc;font: 600 50px/2 "";padding-left: 50px; color: rgb(29, 20, 110);}
+.selfMain p{font: 30px/2 ""; margin-top: 50px;margin-left: 40px;}
+.selfMain ul{background: white;width: 800px;height: 300px;margin: auto;border-radius: 10px;}
+.selfMain ul li{height: 70px;border-bottom: 1px solid #999;padding-left: 40px;}
+.selfMain ul span{font: 20px/70px "";}
+.selfMain ul input{display: inline-block; border: 0;height: 50px; width: 300px; border-bottom: 1px dashed #333; font-size: 20px;color: rgb(27, 27, 139);text-align: center;}
+.selfMain ul .update{width: 90px;background: rgb(28, 28, 168); height: 60px;font: 20px/60px ""; color:white;float: right; display: inline-block; margin-right: 100px;margin-top: 5px; border-radius: 10px;text-align: center;}
+.selfMain ul .redtip{margin-left: 150px; color: red;}
+.selfMain ul .pwdmes{ width: 90px;background: rgb(28, 28, 168); height: 60px;font: 20px/60px ""; color:white;display: inline-block; margin: 30px;border-radius: 10px;text-align: center;}
+.selfMain ul .pwdtip{color:red}
+.selfMain ul .pwdupdate{position: relative; display: inline-block; float: right; width: 400px; height: 200px; display: none;}
+.close{position: absolute; right: 60px; top: 20px; font: 20px/50px "";color: white;text-align: center; width: 50px;height: 50px; background: rgb(28, 28, 168);}
+.login{position: relative;}
+.login-bottom{background: white; display: none;position: absolute;z-index: 4; margin-left: -20px;width: 100px;height: 65px;text-align: center;}
+.exit{position: absolute; right:0; top:0; width: 30px; height: 30px; background:rgb(28, 28, 168) ; font: 30px/30px ""; color: white; text-align: center;}

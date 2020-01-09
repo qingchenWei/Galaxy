@@ -11,27 +11,33 @@ class goodsList{
         this.a = localStorage.getItem("id");
         this.liIndex = localStorage.getItem("index");
         this.load(this.a);    
-        this.showname();    
+        this.showname();
+		this.searchcc();
     }
     showname(){
         var that=this;
-        let user = JSON.parse(localStorage.getItem("user"));
+        var user = JSON.parse(localStorage.getItem("user"));
         user.some(function(val,index){
             if(val.off==1){
                 that.i=index;
             } 
         })
         if(this.i!=undefined){
-            console.log(user[that.i].off)
             if(user[that.i].off===1){
                 that.log.innerHTML= "<i></i>退出登录";
-                this.log.href="../html/index.html";
+				that.log.style.color="blue";
+				  this.log.removeAttribute("href");
                 this.cartPage.href="../html/cart.html";
-                this.log.onclick = function(){
+                $(".log").click(function(){
+					user.some(function(val,index){
+						if(val.off==1){
+							that.i=index;
+						} 
+					})
                     user[that.i].off=0;
                     localStorage.setItem("user",JSON.stringify(user));
-                    this.log.href="../html/login.html";
-                }
+                    this.href="../html/login.html";
+                })
             }
             if(user[that.i].off===0){
                 that.log.innerHTML= "<i></i>登录/注册";
@@ -65,7 +71,9 @@ class goodsList{
                 arr.push(that.alliphonRes[j][i])
             }
 
-        }
+        }	
+		
+			$(".nowname").html($(".nav-left").children("li").eq(b).children("a").html()+"("+arr.length+")");
             $(".goods").html(str);
             $(".goods").children("li").click(function(){
                 localStorage.setItem("mes",JSON.stringify(arr[$(this).index()]))
@@ -78,7 +86,7 @@ class goodsList{
             }  
         })
         }
-        addEvent(){
+    addEvent(){
             var that = this;
         this.search.onclick = function(){
             $(".searchBox").show(500);
@@ -139,12 +147,25 @@ class goodsList{
                 <span class="price">${this.alliphonRes[liIndex][i].price}</span></a>
                 </li>`;
             }
+			$(".nowname").html($(".allList").children("li").eq(liIndex).children("a").html()+"("+this.alliphonRes[liIndex].length+")");
             $(".goods").html(str);
             $(".goods").children("li").click(function(){
                 localStorage.setItem("mes",JSON.stringify(that.alliphonRes[liIndex][$(this).index()]))
             })  
     }
-
+	searchcc(){
+		var that=this;
+		let keyword=["手机","手表","电脑","家居","配件"];
+		$(".searchBtn").click(function(){
+			keyword.some(function(val,index){
+				if(val==$(".searchword").val()){
+					that.key=index;
+					localStorage.setItem("id",that.key);
+				}
+			})
+		})
+		
+	}
 
 }
 new goodsList();
